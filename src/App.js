@@ -7,10 +7,7 @@ import FeaturesPage from './Pages/Features';
 import PricingPage from './Pages/Pricing';
 import SignUpPage from './Pages/SignUp';
 import Resources from './Pages/Resources';
-<<<<<<< HEAD
 import FAQ from './Pages/FAQ';
-=======
->>>>>>> origin/main
 
 const App = () => {
   return (
@@ -23,10 +20,7 @@ const App = () => {
         <Route path="/Pricing" element={<PricingPage />} />
         <Route path="/SignUp" element={<SignUpPage />} />
         <Route path="/Resources" element={<Resources />} />
-<<<<<<< HEAD
         <Route path="/FAQ" element={<FAQ />} />
-=======
->>>>>>> origin/main
       </Routes>
     </>
   );
