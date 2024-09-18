@@ -1,0 +1,94 @@
+.features-container {
+
+  width: 100vw;
+  background-repeat: no-repeat;
+  text-align: center;
+  justify-content: center;
+  background-color: #FAF5EF;
+
+
+} 
+
+.features-section {
+  font-weight: 700;
+  padding: 4rem 2rem;
+  text-align: center;
+  justify-content: center;
+  margin: 0;
+  position: relative;
+  top: 10vh;
+
+}
+
+.features-title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.features-introduction-text{
+  min-width: 40vw;
+  font-weight: 100;
+  padding-bottom: 30px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+  width: 50%;
+  margin: auto;
+}
+
+.feature-item {
+  background-color: #FAF5EF;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(241, 4, 114, 0.2), 0 0 20px rgba(241, 4, 114, 0.2);
+}
+
+.feature-item.blurred {
+  filter: blur(4px);
+  opacity: 0.7;
+  transform: scale(0.98);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  color: #ff0084;
+  margin-bottom: 1rem;
+}
+
+.feature-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.feature-description {
+  font-size: 1rem;
+  color: #666;
+}
+
+.cta-button {
+  background-color: #F10472;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #d10361;
+}

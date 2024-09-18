@@ -1,0 +1,47 @@
+.star-rating {
+  display: flex;
+  gap: 10px;
+}
+
+.star-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.star-button.on {
+  background-color: #e8c5d5;
+}
+
+.star-button.off {
+  background-color: #e8c5d5;
+}
+
+.star-button.clicked {
+  transform: scale(1.1);
+}
+
+.star-button svg {
+  width: 80%;
+  height: 80%;
+  fill: white;
+  transition: fill 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.star-button.on svg,
+.star-button:hover svg {
+  fill: #f10472;
+}
+
+.star-button:hover svg {
+  transform: scale(1.15);
+}

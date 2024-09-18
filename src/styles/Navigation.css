@@ -1,0 +1,117 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem 0rem;
+    width: 100%;
+    background-color: #FAF5EF;
+    border-bottom: 1px solid #FAF5EF;
+    text-decoration: none;
+    justify-content: center;    
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    position: absolute;
+    right: -50px;
+}
+
+
+nav ul {
+    list-style-type: none;
+    gap: 2.5rem;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 599;
+    font-family: 'Faro Regular Lucky', sans-serif;
+}
+
+nav ul li a {
+    font-size: 20px;
+    position: relative;
+    bottom: -2vh;
+}
+  
+nav ul li a:hover {
+    text-decoration: none;
+    color: #F10472;
+    transition: 0.15s;
+}
+  
+nav ul li {
+    margin: 0 25px;
+}
+
+.get-started {
+    background-color: #FAF5EF;
+    color: #222!important;
+    padding: 12px 24px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Faro Regular Lucky', sans-serif;
+    padding: 20px 30px;
+    position: relative;
+    border-radius: 25px;
+    transition: transform 0.1s ease; /* Updated for smoother transition */
+    will-change: transform; /* Hint to the browser to optimize for this */
+}
+
+.get-started:hover {
+    color: rgb(48, 44, 44) !important;
+    background-color: #f9ecdc;
+    transform: scale(1.15) !important;
+}
+
+
+.get-started .hover-effect {
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: transform 0.2s ease;
+    transform: scale(1.15) !important;
+}
+
+.get-started:hover .hover-effect {
+    transform: translate(-50%, -50%) scale(2);
+    transform: scale(1.15) !important;
+}
+
+
+
+.logo {
+    font-size: 32px;
+    font-weight: 700;
+    justify-self: flex-start;
+    font-family: 'Faro Display', sans-serif;
+    color: #000000;
+    text-decoration: none;
+    opacity: 0;
+    transform: translateY(-100%);
+    position: relative;
+    left: -10vh;
+    top: 2vh;
+  }
+  
+  .logo.animate {
+    animation: fallDown 0.5s ease-out forwards;
+  }
+  
+  @keyframes fallDown {
+    0% { transform: translateY(-100%); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+
+  

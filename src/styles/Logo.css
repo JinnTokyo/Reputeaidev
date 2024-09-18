@@ -1,0 +1,39 @@
+.logo-container {
+  display: flex;
+  align-items: center;
+  text-align: center; /* Center the logo */
+  margin-bottom: 20px; /* Space below the logo */
+  font-size: 200px;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+  font-size: 20px !important;
+}
+
+.logo-text {
+  font-size: 3rem; /* Increase font size (adjust as needed) */
+  font-weight: bold; /* Make it bold */
+  font-family: 'Mollen Semi Bold', sans-serif;
+  opacity: 0;
+  animation: dropDown 1s ease-out forwards;
+  color: #1f1f1f; /* Change color as needed */
+}
+
+@keyframes dropDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.signup-page .logo-text {
+  font-size: 50px; /* Increase font size only on the signup page */
+  font-weight: bold; /* Make it bold */
+  color: #1f1f1f; /* Change color as needed */
+}

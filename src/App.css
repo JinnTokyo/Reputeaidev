@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+    --neon-color: #000;
+    --primary-color: #F10472;
+    --primary-color-hover: #d10361;
+    --secondary-color: #6f7190;
+    --background-color: rgba(194, 205, 255, 0.03);
+    --white: #FAF5EF;
+    --black: #000000;
+    --font-main: 'Inter', sans-serif;
+    --font-display: 'Faro Display', sans-serif;
+    --transition-duration: 0.3s;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body, html {
+    font-family: var(--font-main);
+    background-color: #FAF5EF;
+    color: var(--black);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #FAF5EF;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  background-color: rgba(194, 205, 255, 0.03);
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+h1 {
+  text-decoration: none;
+}
+
+.logo:hover {
+  text-decoration: none;
+}
+
+button {
+  text-decoration: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 0px var(--neon-color);
+  text-decoration: none;
+}
+
+button:hover {
+  box-shadow: 0 0 0px var(--neon-color);
+}
+
+.features, .resources, .pricing, .contact {
+  background-color: transparent;
+  color: #333;
+  body:not(.dark-mode) .special-text {
+    color: #333;
+  }
+  
+  body.dark.mode .special-text {
+    color: #FAF5EF;
+  }
+}
+
+.features:hover, .resources:hover, .pricing:hover, .contact:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  text-decoration: none;
+  body:not(.dark-mode) .special-text {
+    color: #333;
+  }
+  
+  body.dark.mode .special-text {
+    color: #FAF5EF;
+  }
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 100vh; /* Increased minimum height */
+  background-color: #FAF5EF;
+  background: #FAF5EF
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 25vh;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #FAF5EF;
+}
+
+.main-content {
+  max-width: 800px;
+  text-align: center;
+  margin-top: -10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000000;
+}
+
+.main-heading {
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #000000;
+}
+
+.main-heading div {
+  width: 101%;
+}
+
+@media (max-width: 768px) {
+  .main-heading {
+    font-size: 3.5rem;
+  }
+}
+
+.heading-line {
+  display: block;
+  width: 100%;
+  animation: popOut 0.3s ease-out forwards;
+  opacity: 0;
+}
+
+.heading-line:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.text-pink {
+  color: var(--primary-color);
+}
+
+.subtitle, p {
+  font-size: 1.2rem;
+  color: #6f7190;
+  margin-bottom: 1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subtitle strong {
+  font-weight: 700;
+}
+
+.subtitle {
+  animation: popOut 0.5s ease-out forwards;
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+
+.star-rating {
+  margin: 1.5rem 0;
+  animation: popOut 0.5s ease-out forwards;
+  animation-delay: 0.3s;
+  opacity: 0;
+}
+
+.review-background, canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.review {
+  position: absolute;
+  background-color: #FAF5EF;
+  padding: 5px;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 150px;
+  font-size: 8px;
+  transition: all 0.3s ease;
+}
+
+.review-header {
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.review-rating {
+  color: gold;
+  margin-bottom: 2px;
+}
+
+.review-text {
+  font-size: 7px;
+}
+
+.interactive-testimonial {
+  margin-top: -40px;
+}
+
+.testimonial-wrapper {
+  margin-top: 10px;
+}
+
+.interactive-testimonial button {
+  background-color: #F10472;
+  color: white; /* Ensure text is visible on pink background */
+  padding: 20px 35px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.interactive-testimonial button:hover {
+  background-color: #d10361; /* Slightly darker shade for hover */
+  transform: scale(1.05);
+}
+
+.interactive-testimonial button:disabled {
+  background-color: #f104739c;
+  cursor: not-allowed;
+  transform: none;
+}
+
+@keyframes popOut {
+  0% { transform: scale(0.5); opacity: 0; }
+   100% { transform: scale(1); opacity: 1; }
+}
+
+   footer {
+    background-color: #FAF5EF;
+}
+
+.footer {
+  background-color: #FAF5EF;
+  background-image: #FAF5EF !important;
+}
+
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.generate-testimonial-btn {
+  background-color: #F10472; /* Your main pink color */
+  color: white;
+  /* Add other necessary styles */
+}
+
+.generate-testimonial-btn:hover {
+  background-color: #d10361; /* Slightly darker shade for hover effect */
+}
+
+
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: var(--white);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-width: 150px;
+    z-index: 1;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+.dropdown a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.dropdown a:hover {
+    background-color: var(--bg-color);
+}
+
+/* ... rest of your styles ... */
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform var(--transition-duration) ease;
+}
+
+#scrollToTopBtn:hover {
+    transform: scale(1.1);
+}
+
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.theme-toggle,
+#scrollToTopBtn {
+  position: fixed;
+  z-index: 9999;
+}
+
+.theme-toggle {
+  bottom: 20px;
+  left: 20px;
+}
+
+#scrollToTopBtn {
+  bottom: 20px;
+  right: 20px;
+}
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+  .testimonials-section {
+    background-color: #FAF5EF;
+    padding-top: 10vh;
+
+}
+
+   p {
+    font-size: 20px;
+}
