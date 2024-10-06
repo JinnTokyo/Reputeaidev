@@ -7,6 +7,7 @@ import Portrait3 from '../Assets/images/portrait3.jpeg'
 import Portrait5 from '../Assets/images/portrait5.jpeg'
 import Icon1 from '../Assets/images/icon1.png'
 
+
 const SignUp = () => {
   useEffect(() => {
     // Add a class to the body when the SignUp component is mounted´´´
@@ -59,11 +60,11 @@ const SignUp = () => {
         <div className="logo-container" style={{ display: 'flex', alignItems: 'center' }}>
           <a href="/" className="logo-link" style={{ display: 'flex', alignItems: 'center' }}>
             <div className="logo-text">Repute</div>
-            <img src="/icons8-star-68.png" alt="Star Icon" className="star-icon" style={{ width: '24px', height: '24px', marginLeft: '5px' }} />
+            <img src={Icon1} alt="Star Icon" className="star-icon" style={{ width: '24px', height: '24px', marginLeft: '5px' }} />
           </a>
           </div>
         <div className="marquee-bottom">
-          <div className="marquee-content-bottom">REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE</div>
+          <div className="marquee-content-bottom"> REPUTE REPUTE REPUTE Sign Up For Free Now! REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE Sign Up For Free Now! REPUTE REPUTE</div>
         </div>
         <h2>The #1 AI-Powered Testimonial Tool</h2>
         <p>Create authentic testimonials in seconds and elevate your brand's reputation.</p>

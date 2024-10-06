@@ -1,0 +1,11 @@
+.Customers-section-container {
+
+    border: solid 1px red;
+    margin-top: 10vh;
+
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    align-items: center;
+    text-align: center;
+}

@@ -8,7 +8,7 @@
 }
 .pricing-header {
     color: #F10472;
-    margin-top: 60px;
+    margin-top: 80px;
     font-weight: bold;
 }
 .subheading {
@@ -325,7 +325,11 @@ input:checked + .slider.round:before {
 .card.highlight .price .original-price,
 .card.highlight .price .current-price,
 .card.highlight .price .price-period {
-    color: #000000;
+    color: #ffffff;
+}
+
+.farenDin{
+    color: #0b0909;
 }
 
 .card .badge,

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../styles/Resources.css'
 
 const Resources = () => {
   // State for search input
@@ -37,7 +38,7 @@ const Resources = () => {
       {/* Header Section */}
       <header className="resources-header">
         <h1>Resources</h1>
-        <p>Your guide to mastering our platform</p>
+        <p>Your guide to mastering our platform. Search for a category you want to know more about</p>
         <input
           type="text"
           id="resource-search"
@@ -82,7 +83,7 @@ const Resources = () => {
 
       {/* Footer Section */}
       <footer className="resources-footer">
-        <p>Need more help? <a href="#">Contact Support</a></p>
+        <p>Need more help? <a href="/contact">Contact Support</a></p>
       </footer>
     </div>
   );

@@ -14,6 +14,7 @@ import { initDarkMode, setupScrollToTop, setupLazyLoading, setupScrollAnimation,
 import ReactConfetti from 'react-confetti';
 import { useWindowSize } from 'react-use';
 import confetti from 'canvas-confetti';
+import TestimonialProfile from '../components/TestimonialProfile';
 
 function Home() {
   const navigate = useNavigate();
@@ -62,7 +63,6 @@ function Home() {
 
 
   useEffect(() => {
-    initDarkMode();
     setupScrollToTop();
     setupLazyLoading();
     setupScrollAnimation();
@@ -71,28 +71,6 @@ function Home() {
 
   return (
       <div className="App">
-        {showConfetti && (
-          <ReactConfetti
-            width={width}
-            height={height}
-            recycle={false}
-            numberOfPieces={200}
-            initialVelocityY={{ min: -15, max: -5 }}
-            initialVelocityX={{ min: -10, max: 10 }}
-            gravity={0.1}
-            colors={['#ff00ff', '#ff9900', '#ff0066', '#3300ff', '#00ff00', '#ffff00']}
-            style={{
-              position: 'fixed',
-              top: 0,
-              left: 0,
-              width: '100%',
-              height: '100%',
-              zIndex: 9999,
-              pointerEvents: 'none',
-            }}
-          />
-        )}
-
         <button id="scrollToTopBtn">↑</button>
 
           <main>
@@ -111,7 +89,9 @@ function Home() {
           </main>
 
           <Features featuresRef={featuresRef} />
-          <Testimonials />
+          <div className="CustomersSection">
+           <TestimonialProfile />
+          </div>
 
           <footer style={{
             display: 'flex',

@@ -367,12 +367,11 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-  .testimonials-section {
-    background-color: #FAF5EF;
-    padding-top: 10vh;
-
-}
-
    p {
     font-size: 20px;
+}
+
+.CustomersSection {
+
+
 }

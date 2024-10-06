@@ -1,0 +1,151 @@
+.CustomersSection{
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally (optional) */
+    margin-top: 60px;
+    width: 100vw;
+}
+
+.TestimonialContainer {
+    border-radius: 30px;
+    box-shadow: 3px black;
+
+    width: 60%; /* Adjust width */
+    height: 400px; /* Adjust height */
+    margin: 10px auto; /* Center the container horizontally */
+    display: flex; /* Enable Flexbox for the main container */
+}
+
+
+.CustomersSectionDescriptionContainer{
+    text-align: center;
+}
+
+.CustomersSectionTitle{
+    font-size: 36px;
+    font-style: helvetica;
+}
+
+.LeftLeftTestimonialContainer {
+
+    width: 10%;
+    height: 60%; /* Adjust as needed */
+}
+
+.LeftTestimonialContainer{
+    width: 30%;
+    height: 100%; /* Adjust as needed */
+    display: grid;
+    justify-items: start; /* Align items to the right */
+    gap: 10px; /* Space between boxes */
+    padding: 40px;
+
+}
+
+.RightTestimonialContainer{
+
+    width: 70%;
+    height: 100%; /* Adjust as needed */
+    display: grid;
+    grid-template-columns: 1fr; /* One column */
+
+    gap: 10px; /* Space between boxes */
+    display: block; /* Enable Flexbox for the main container */
+    margin-top: 40px;
+}
+
+.RightUpTestimonialContainer{
+
+    width: 100%;
+    height: 30%;
+
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: block;
+
+}
+
+.RightDownTestimonialContainer{
+
+    width: 100%;
+    height: 70%;
+    padding: 10px;
+    text-align: left;
+    justify-content: left;
+}
+
+.BioContainer {
+    width: 100%;
+    height: 100%;
+
+}
+
+.Bio{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+.ReviewContainer {
+
+    height: 80%;
+    width: 100%;
+  
+    border-radius: 20px;
+
+
+}
+
+.ReviewCustomer{
+    font-size: 1.2em;
+    font-weight: 560;
+}
+
+.ImageContainer {
+    width: 100%;       /* Set the width of the container */
+    height: 300px;     /* Set a fixed height or any height you prefer */
+    display: flex;     /* Use flexbox for alignment */
+    justify-content: center; /* Center horizontally */
+    align-items: center;    /* Center vertically */
+    overflow: hidden;  /* Hide any overflow */
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.343);
+
+
+}
+
+.Profile1Img {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    
+}
+
+.Profile2Img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Line {
+    width: 90%;
+    border: solid #55555539 1px;
+    margin: auto;
+    
+}
+
+.Quotes {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #171717c4;
+    font-weight: 600;
+
+
+}
+
+.SubBio {
+    font-family: 'Courier New';
+    font-weight: bold;
+
+}

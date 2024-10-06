@@ -144,8 +144,8 @@ button:disabled {
 
 /* Assuming your button has a class 'generate-testimonial-btn' */
 button.generate-testimonial-btn {
-  background-color: #faf5ef;
-  color: rgb(18, 16, 16);
+  background-color: #F10472;
+  color: rgb(255, 246, 246);
   border: none;
   padding: 20px 35px;
   font-size: 18px;
@@ -160,12 +160,11 @@ button.generate-testimonial-btn {
 
 /* Make sure hover and disabled states are also updated */
 button.generate-testimonial-btn:hover {
-  background-color: #f9ecdc;
+  background-color: #F10472;
   transform: scale(1.05);
 }
 
 button.generate-testimonial-btn:disabled {
-  background-color: #f9ecdc;
   cursor: not-allowed;
   transform: none;
 }

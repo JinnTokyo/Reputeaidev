@@ -1,5 +1,6 @@
 import React from 'react';
 import './Testimonials.js';
+import '../styles/CustomersSection.css';
 
 const TestimonialCard = ({ name, title, photo, text, rating }) => (
   <div className="testimonial-card">
@@ -32,8 +33,8 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="testimonials-section">
-      <h2>What Our Users Say</h2>
+    <section className="Customers-section-container">
+      <h2>What Our Customers Say</h2>
       <p className="subheading">See how our AI-generated testimonials have helped businesses like yours build trust and drive conversions.</p>
       <div className="testimonials-grid">
         {testimonials.map((testimonial, index) => (

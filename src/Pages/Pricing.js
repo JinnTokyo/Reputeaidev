@@ -59,7 +59,7 @@ function Pricing() {
             </ul>
             <div className="price">
               <div className="original-price">
-                <del>${isYearly ? '1188' : '99'}</del>
+                <del className='farenDin'>${isYearly ? '1188' : '99'}</del>
                 <span className="price-period">{isYearly ? '/year' : '/month'}</span>
               </div>
               <div className="current-price">
