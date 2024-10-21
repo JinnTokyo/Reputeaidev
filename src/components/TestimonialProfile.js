@@ -25,7 +25,7 @@ function TestimonialProfile() {
         <div className="RightTestimonialContainer">
           <div className="RightUpTestimonialContainer">
             <div className="BioContainer">
-              <h2 className="Bio">Jane Doe, CEO of Alpha Corp Since 2013 </h2>
+              <h2 className="Bio">John Doe, CEO of Alpha Corp Since 2013 </h2>
               <p className="SubBio">Driving Innovation in the Tech Industry </p>
             <div className="Line"></div>
             </div>

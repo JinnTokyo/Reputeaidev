@@ -23,7 +23,7 @@ const TestimonialCard = ({ name, title, photo, text, rating }) => (
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Jane Doe",
+      name: "John Doe",
       title: "CEO of XYZ Corp",
       photo: "/path/to/jane-photo.jpg",
       text: "Using Repute's AI testimonials, we've seen a 20% increase in customer engagement. The process was quick, and the results were authentic and impactful.",

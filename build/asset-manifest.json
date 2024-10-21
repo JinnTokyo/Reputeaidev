@@ -1,17 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.a5b0e5a6.css",
-    "main.js": "/static/js/main.e0c2036b.js",
+    "main.css": "/static/css/main.b30c72f2.css",
+    "main.js": "/static/js/main.35c0b658.js",
     "static/media/pexels-jordan-bergendahl-2628960-10402659.jpg": "/static/media/pexels-jordan-bergendahl-2628960-10402659.dd1cc6f547c73bac8868.jpg",
+    "static/media/businessportrait4.png": "/static/media/businessportrait4.bd5cf5db82cd8e716763.png",
+    "static/media/portrait1.png": "/static/media/portrait1.994939fb467ce7a041c4.png",
     "static/media/pexels-olly-774909.jpg": "/static/media/pexels-olly-774909.97ce8c0b045ea8c6aa22.jpg",
     "static/media/pexels-jonaorle-4029925.jpg": "/static/media/pexels-jonaorle-4029925.545f194c964d53fc7dc8.jpg",
     "static/media/pexels-linkedin-2182970.jpg": "/static/media/pexels-linkedin-2182970.86815dd97372f6325d12.jpg",
+    "static/media/businessportrait11.png": "/static/media/businessportrait11.62842f2728e472f4a086.png",
+    "static/media/businessportrait6.png": "/static/media/businessportrait6.bb6c06c12753881d9db1.png",
     "index.html": "/index.html",
-    "main.a5b0e5a6.css.map": "/static/css/main.a5b0e5a6.css.map",
-    "main.e0c2036b.js.map": "/static/js/main.e0c2036b.js.map"
+    "main.b30c72f2.css.map": "/static/css/main.b30c72f2.css.map",
+    "main.35c0b658.js.map": "/static/js/main.35c0b658.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5b0e5a6.css",
-    "static/js/main.e0c2036b.js"
+    "static/css/main.b30c72f2.css",
+    "static/js/main.35c0b658.js"
   ]
 }

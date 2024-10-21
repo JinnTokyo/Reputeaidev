@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/SignUp.css';
-import Portrait1 from '../Assets/images/portrait1.jpeg'
+import Portrait1 from '../Assets/images/portrait1.png'
 import Portrait2 from '../Assets/images/portrait2.jpeg'
 import Portrait3 from '../Assets/images/portrait3.jpeg'
 import Portrait5 from '../Assets/images/portrait5.jpeg'
@@ -60,20 +60,10 @@ const SignUp = () => {
         <div className="logo-container" style={{ display: 'flex', alignItems: 'center' }}>
           <a href="/" className="logo-link" style={{ display: 'flex', alignItems: 'center' }}>
             <div className="logo-text">Repute</div>
-            <img src={Icon1} alt="Star Icon" className="star-icon" style={{ width: '24px', height: '24px', marginLeft: '5px' }} />
           </a>
           </div>
-        <div className="marquee-bottom">
-          <div className="marquee-content-bottom"> REPUTE REPUTE REPUTE Sign Up For Free Now! REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE REPUTE Sign Up For Free Now! REPUTE REPUTE</div>
-        </div>
         <h2>The #1 AI-Powered Testimonial Tool</h2>
-        <p>Create authentic testimonials in seconds and elevate your brand's reputation.</p>
-        <div className="avatar-group">
-          <img src={Portrait1} alt="User Avatar" />
-          <img src={Portrait2} alt="User Avatar 2" />  
-          <img src={Portrait3} alt="User Avatar 3" />  
-          <img src={Portrait5} alt="User Avatar 5" />  
-        </div>
+        <div className="DescriptionOnSignup">Create authentic testimonials in seconds and elevate your brand's reputation.</div>
       </div>
     </div>
   );
