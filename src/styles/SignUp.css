@@ -130,9 +130,14 @@ input {
     font-size: 16px;
     cursor: pointer;
     border: none;
-    transition: background-color 0.3s;
+   
     width: 80%;
     margin-left: 55px;
+}
+
+.primary-button:hover{
+    Transition: color #03fff2 10s !important;
+    background-color: #d103ff;
 }
 
 .terms {
